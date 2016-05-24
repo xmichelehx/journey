@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:arial,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	position:relative;
+}
+
+img {
+	border:0px;
+}
+
+.ticker-container {
+	clear:both;
+	display:table;
+	width:100%;
+	height:auto;
+	max-width:534px;
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	overflow:hidden;
+}
+
+.ticker-numbers {
+	display:table;
+	width:100%;
+	margin-left:1.8%;
+	margin-top:17.4%;
+	margin-bottom:8.5%;
+}
+
+.num {
+	display:table;
+	float:left;
+	width:10.5%;
+	margin-left:-0.25%;
+	background-image:url(../images/ticker-num.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.num img {
+	width:100%;
+	height:auto;
+}
+
+.num:nth-child(4),
+.num:nth-child(7) {
+	margin-left:2.5% !important;
+}
+
+.tp-leftarrow.round {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	background: url(../images/small_left.png) no-repeat top left;
+	width: 19px;
+	height: 14px;
+	margin-right: 0px;
+	float: none;
+	margin-top: 0px;
+	display: inline-block;
+}
+				
+.tp-rightarrow.round {
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	background: url(../images/small_right.png) no-repeat top left;
+	width: 19px;
+	height: 14px;
+	margin-right: 0px;
+	float: none;
+	margin-top: 0px;	
+	display: inline-block;
+}
+  
+.tp-bullets {
+	z-index: 1000;
+	position: absolute;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+	-ms-transition: opacity 0.2s ease-out;
+	-webkit-transform: translateZ(5px);
+}	
+
+.tp-leftarrow.default,
+.tp-rightarrow.default {
+	width: 26px;
+	height: 46px;
+	opacity: 0.5;
+}
+
+.tp-leftarrow.default:hover,
+.tp-rightarrow.default:hover {
+	opacity: 1; 
+}
+
+.tp-bullets.simplebullets.round .bullet {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #0063a8;
+	border-radius: 50%;
+	background: transparent;
+	display: inline-block;
+}
+
+.tp-bullets.simplebullets.round .bullet.selected,
+.tp-bullets.simplebullets.round .bullet:hover { 
+	background-color: #0063a8; 
+}
+.tp-bullets.simplebullets.round {
+	display: inline-block; 
+	top: 200px; 
+	left: 204px; 
+	width: 130px;
+}
